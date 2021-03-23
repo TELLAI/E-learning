@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+
+{% block body %}
+{% block header %}
+{{ super() }}
+{% endblock header %}
+
+{% block content %}
+    <section id="wrap">
+        <div id="container">
+            <h1 id="sectionH1">{{ section }}</h1>
+            <h2 id="sectionH2">{{ description }}</h2>
+            <section id="collection_videos">
+                {% for video in result %}
+                <div class="flexS">
+                    <a id="click" href="/sections/python/watch/{{ video[0] }}">
+                        <!-- <iframe width="560" height="315" src= {{ video[0] }} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     -->
+                        <h2 id="video_title">{{ video[1] }}</h2>
+                        <p id="video_p">{{ video[2] }}</p>
+                        <p> {{ video[3] }}</p>
+                    
+                    </a>
+                </div>
+                {% endfor %}
+
+            </section>
+
+        </div>
+    </section> 
+{% endblock content %}
+{% block footer %}
+{{ super() }}
+
+{% endblock footer %}
+    <script src="{{url_for('static', filename='JS/script.js') }}"></script>
+
+{% endblock body %}
+
+</html>
+
+

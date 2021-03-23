@@ -1,0 +1,88 @@
+{
+  "Python": [
+    {
+      "name": "Les templates jinja2",
+      "chaine": "xavki",
+      "url": "https://www.youtube.com/embed/kuQ1XxXM5SU",
+      "description": "Flask facilite la mise en place de route pour créer une application web. Avec les templates jinja2, Flask permet de créer du dynamisme pour créer des pages encore plus facilement et les alimenter."
+    },
+    {
+      "name": "Programmation objet",
+      "chaine": "Formation vidéo",
+      "url": "https://www.youtube.com/embed/s2pnrMKpEp0",
+      "description": "Séance d'introduction à la programmation objet. Le langage Python est composé uniquement d'objets et c'est ici l'occasion de découvrir toutes ces nouvelles notions."
+    },
+    {
+      "name": "Coder un bot Discord",
+      "chaine": "Graven",
+      "url": "https://www.youtube.com/embed/m9CSCj7SkdM",
+      "description": "Aujourd'hui , on se retrouve pour le 28 ème entrainement avec du python"
+    },
+    {
+      "name": "Coder un gestionnaire de parking",
+      "chaine": "Graven",
+      "url": "https://www.youtube.com/embed/m96VEV7MeZQ",
+      "description": "Aujourd'hui , on se retrouve pour le 12ème entrainement avec du python."
+    }
+  ],
+  "Javascript": [
+    {
+      "name": "Naviguer dans le DOM",
+      "chaine": "Pierre Giraud",
+      "url": "https://www.youtube.com/embed/VRdz6g6nOT4",
+      "description": "On apprend comment naviguer à travers les différents noeuds du DOM pour accéder à un contenu précis en JavaScript."
+    },
+    {
+      "name": "Top des librairies d'annimation",
+      "chaine": "Le designer du web",
+      "url": "https://www.youtube.com/embed/f4pd376ig98",
+      "description": "Présentation des librairies principales pour mener à bien tes projets en Javascript."
+    },
+    {
+      "name": "10 projets simple en Javascript",
+      "chaine": "IBM Cloud",
+      "url": "https://www.youtube.com/embed/NLp4zn1QP80",
+      "description": "Notre objectif sur cette chaîne est de démocratiser la programmation de façon divertissante, démontrer au plus grand nombre que c'est un domaine passionnant et surtout accessible ! Au programme : des discussions chill, des réactions sur l'actualité du code, des entretiens avec des développeurs pros, des challenges de programmation, des astuces pour les débutants, etc."
+    }
+  ],
+  "Cloud": [
+    {
+      "name": "What are Microservices?",
+      "chaine": "IBM Cloud",
+      "url": "https://www.youtube.com/embed/CdBtNQZH8a4",
+      "description": "In this lightboarding explainer video, Dan Bettinger gives a broad overview of microservices.By comparing microservices application architecture with the traditional type of monolithic architecture through the example of a sample ticketing application, Dan lays out the myriad advantages of microservices, as well as solutions they provide to the challenges monoliths present."
+    },
+    {
+      "name": "What is Cloud Security?",
+      "chaine": "IBM Cloud",
+      "url": "https://www.youtube.com/embed/jI8IKpjiCSM",
+      "description": "Check out this lightboard video with Nataraj Nagaratnam from IBM Cloud as he maps out what cloud security is and explains how important it is for enterprises to incorporate it into their business operations."
+    },
+    {
+      "name": "What is a Virtual Private Cloud?",
+      "chaine": "IBM Cloud",
+      "url": "https://www.youtube.com/embed/NbkPRn1mqlU",
+      "description": "A virtual private cloud is a public cloud capability that provides you the ability to define and control isolated virtual networks, and then deploy cloud resources into those networks. Check out this lightboard video with Ryan Sumner from IBM Cloud as he walks through a basic Virtual Private Cloud architecture and explains the many benefits it can provide to a business."
+    }
+  ],
+  "Docker": [
+    {
+      "name": "Docker Tutorial for Beginners [FULL COURSE in 3 Hours]",
+      "chaine": "TechWorld with Nana",
+      "url": "https://www.youtube.com/embed/3c-iBn73dDE",
+      "description": "By the end, you will have a deep understanding of the concepts and a great overall big picture of how Docker is used in the whole software development process. The course is a mix of animated theoretic explanation and hands-on demo’s to follow along, so you get your first hands-on experience with Docker and feel more confident using it in your project."
+    },
+    {
+      "name": "Kubernetes vs. Docker: It's Not an Either/Or Question",
+      "chaine": "IBM Cloud",
+      "url": "https://www.youtube.com/embed/2vMEQ5zs1ko",
+      "description": "Bien qu'il s'agisse d'une idée fausse courante, Kubernetes et Docker ne sont pas des technologies opposées. En fait, ils se complètent réellement. Passer à l'échelle avec Docker seul pose de nombreux défis, et Kubernetes s'attaque à ces défis qui émergent avec les grands déploiements basés sur Docker. Dans cette vidéo de lightboard, Sai Vennam passe en revue les idées fausses autour de la question Kubernetes vs Docker et décrit les principaux avantages de Docker et Kubernetes lorsqu'ils sont utilisés ensemble."
+    },
+    {
+      "name": "Introduction To Docker and Docker Containers",
+      "chaine": "The Simple Engineer",
+      "url": "https://www.youtube.com/embed/JSLpG_spOBM",
+      "description": "What is Docker? Docker is a containerized virtual environment that makes it easy to develop, maintain, and deploy apps and services. Get a quick run down in under 10 minutes about Docker. We'll bring you through virtual machines, images, and containers"
+    }
+  ]
+}

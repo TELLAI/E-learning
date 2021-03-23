@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+
+{% block body %}
+{% block header %}
+{{ super() }}
+{% endblock header %}
+
+{% block content %}
+
+<section id="wrap">
+    <div id="container">
+        <h1 id="sectionH1">{{ section }}</h1>
+        <h2 id="sectionH2">{{ description }}</h2>
+        <section id="collection_videos">
+            {% for video in result %}
+            <div class="flexJS">
+                <img src="https://i0.wp.com/www.wushujia.fr/wp-content/uploads/2016/03/js-logo.png?ssl=1" alt="" style="width: 50%; margin: 0.5rem;">
+                <a id="click" href="/sections/js/watch/{{ video[0] }}">
+                    <h2 id="video_title">{{ video[1] }}</h2>
+                    <p id="video_p">{{ video[2] }}</p>
+
+                </a>
+            </div>
+            {% endfor %}
+
+        </section>
+
+    </div>
+</section> 
+
+
+
+
+
+
+
+{% endblock content %}
+{% block footer %}
+{{ super() }}
+
+{% endblock footer %}
+    <script src="{{url_for('static', filename='JS/script.js') }}"></script>
+
+{% endblock body %}
+
+</html>

@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  flask:
+    container_name: "e-learning"
+    build: .
+    restart: always
+    depends_on: 
+      - "mysql"
+    ports:
+      - "4020:4020"
+    volumes: 
+      - .:/app
+    environment: 
+      FLASK_ENV: development
+    # command: sh -c "./wait-for-it.sh mysql:3306 --timeout=20 -- python app.py"
+    command: ["./wait-for-it.sh", "mysql:3306", '--timeout=30', "--", "python", "app.py"]
+  mysql:
+    image: "mysql"
+    container_name: "mysqlContainer"
+    # restart: always
+    environment: 
+      MYSQL_USER: "root"
+      MYSQL_HOST: "mysqlContainer"
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_PASSWORD: "password"
+      MYSQL_DATABASE: "learning"
+

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+
+{% block header %}
+{{ super() }}
+{% endblock header %}
+
+
+{% block content %}
+<div class="mydata">
+    {% for i in result %}
+    <div id="title">
+        <h2> {{ i[1] }} </h2>
+    </div>
+    <iframe width="560" height="315" src={{ i[3] }} frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <div class="video-info">
+        <p> Liens de la vidéo : <a class="video-link" href="{{ i[3] }}"> <i class="fab fa-youtube"></i></a></p>
+        <div id="chaine"> Auteur : <a class="auteur-link" href="https://www.youtube.com/channel/UCs_AZuYXi6NA9tkdbhjItHQ"> {{ i[2] }} </a></div>
+        <p id="description">Description : <br>
+            <br>
+            {{ i[4] }}
+        </p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
+
+{% block footer %}
+
+{{ super() }}
+
+{% endblock footer %}
+
+{% endblock body %}
